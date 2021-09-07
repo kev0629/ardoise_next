@@ -1,0 +1,135 @@
+body {
+    /*Background from uiGradients*/
+    background: #EFEFBB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D4D3DD, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: "Bree Serif";
+  }
+  
+  h1, input {
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #331a00;
+  }
+  
+  .fa-pencil-square {
+    margin-left: 10px;
+  }
+  
+  input {
+    width: 35%;
+    height: 20px;
+    border: 1px solid #805500;
+    outline: none;
+    border-radius: 2px;
+  }
+  
+  input:focus {
+    box-shadow: 0 0 2px;
+    -webkit-box-shadow: 0 0 2px;
+  }
+  
+  .fa-thumb-tack {
+    position: absolute;
+    color: #331a00;
+    top: 1px;
+    padding: 0 30%; 
+  }
+  
+  ul.paper li .fa-eraser {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 0;
+    background-color: red;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    opacity: 0;
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+  
+  }
+  
+  ul.paper li:hover .fa-eraser {
+    width: 20px;
+    opacity: 1;
+  }
+  
+  .blackboard {
+    position: relative;
+    margin: 3% auto;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    background-image: url("https://res.cloudinary.com/dovbrtmkv/image/upload/v1494873393/cork_mlmb4o.jpg");
+    border: 20px solid #805500;
+  }
+  
+  ul.paper li
+  {
+    position: relative;
+    width: 150px;
+    height: 60px;
+    padding: 50px;
+    list-style-type: none;
+    background: #ffff66;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    margin: 10px;
+    padding: 30px 20px;
+    float: left;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    border-radius: 60px 60px 120px 120px / 4px 4px 8px 8px;
+  }
+  
+  .taskDone {
+    color: gray;
+    text-decoration: line-through;
+  }
+  
+  /* Media queries */
+  
+  @media only screen and (max-width: 760px) {
+    
+    .blackboard {
+      width: 500px;
+      height: 400px;
+    }
+  }
+  
+  @media only screen and (max-width: 560px) {
+  
+    .blackboard {
+      width: 350px;
+      height: 300px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    
+    .blackboard {
+      height: 200px;
+      width: 300px;
+    }
+  
+    ul.paper li {
+      height: 20px;
+      width: 70px;
+      font-size: 14px;
+    }
+  }
+  
+  footer {
+    text-align: center;
+    color: #331a00;
+  }
