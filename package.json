@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@notionhq/client": "^0.3.1",
+    "child_process": "^1.0.2",
     "google-spreadsheet": "^3.1.15",
     "googleapi": "^1.0.2",
     "googleapis": "^85.0.0",
